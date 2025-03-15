@@ -1,0 +1,6 @@
+﻿document.addEventListener("DOMContentLoaded",function(event){var Token=window.localStorage.getItem('Tok')
+var Usuario=window.localStorage.getItem('UsuEn')
+var Hash=window.localStorage.getItem('Hash')
+if(Token!=null&&Usuario!=null&&Hash!=null){}});function SalirSesionLocal(Token,Usuario,Hash){const formData=new FormData();formData.append("token",Token);formData.append("usuario",Usuario);formData.append("encripta",Hash);$.ajax({type:"POST",url:"/Cuenta/SalirSesionStorage",contentType:false,data:formData,dataType:"json",processData:false,success:function(response){if(response){window.localStorage.removeItem('Token');window.localStorage.removeItem('UsuEn');window.localStorage.removeItem('Hash');}},failure:function(response){},error:function(response){}});}
+function ActivarSeleccion(Activar){$("#btnPasaporte").addClass('btn-input-borde-azul-bgr');if(Activar=="btnCedula"){$("#btnCedula").addClass('btn-input-azul-bgr');$("#btnCedula").removeClass('btn-input-borde-azul-bgr');$("#btnPasaporte").removeClass('btn-input-azul-bgr');}
+if(Activar=="btnPasaporte"){$("#btnPasaporte").addClass('btn-input-azul-bgr');$("#btnPasaporte").removeClass('btn-input-borde-azul-bgr');$("#btnCedula").removeClass('btn-input-azul-bgr');$("#btnCedula").addClass('btn-input-borde-azul-bgr');}}

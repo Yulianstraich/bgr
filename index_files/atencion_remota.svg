@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <g id="Grupo_15471" data-name="Grupo 15471" transform="translate(-478 -190)">
+    <path id="Trazado_18795" data-name="Trazado 18795" d="M24,0A24,24,0,1,1,0,24,24,24,0,0,1,24,0Z" transform="translate(478 190)" fill="#f5f5f5"/>
+    <g id="video_camera" data-name="video camera" transform="translate(490 202)">
+      <path id="Trazado_13712" data-name="Trazado 13712" d="M22,17.333,28.073,14.3A1.329,1.329,0,0,1,30,15.493v9.013A1.329,1.329,0,0,1,28.073,25.7L22,22.667M8.667,28H19.333A2.666,2.666,0,0,0,22,25.333V14.667A2.666,2.666,0,0,0,19.333,12H8.667A2.666,2.666,0,0,0,6,14.667V25.333A2.666,2.666,0,0,0,8.667,28Z" transform="translate(-6 -8)" fill="none" stroke="#004ace" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Trazado_13713" data-name="Trazado 13713" d="M0,0H24V24H0Z" fill="none"/>
+    </g>
+  </g>
+</svg>

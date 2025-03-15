@@ -1,0 +1,9 @@
+﻿function mostrarOcultar(){let tipo=document.getElementById("Clave");if(tipo.type=="password"){tipo.type="text";$("#ver-c").removeClass("bi-eye-slash-fill");$("#ver-c").addClass("bi-eye-fill");}else{tipo.type="password";$("#ver-c").removeClass("bi-eye-fill");$("#ver-c").addClass("bi-eye-slash-fill");}}
+let tabChanges=function(val){let ele=document.getElementById("TarjetaPin").querySelectorAll('input');if(ele[val-1].value!=''){ele[val]?ele[val].focus():'';}else if(ele[val-1].value==''){ele[val-2]?ele[val-2].focus():'';}}
+function activarLoading(objeto,etiqueta){$(objeto).prop("disabled",true);$(objeto).html('<span id="spnloading" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>'+etiqueta);}
+function activarLoadingLogin(objeto,etiqueta){let Clave=document.getElementById("Clave").value;let NombreUsuario=document.getElementById("NombreUsuario").value;if(Clave!=""&&NombreUsuario!=""){$(objeto).prop("disabled",true);$(objeto).html('<span id="spnloading" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>');}}
+function ActivarAccionLoad(titulo){$("#idload").css("display","block");$(".loader").delay(80000).fadeOut("slow");}
+function DesactivarAccionLoad(tiempo){$(".preloader-accion").delay(tiempo).fadeOut();}
+function encriptarClave(){let Clave=document.getElementById("Clave");let ClaveEncriptado=btoa(Clave.value);document.getElementById('Clave').value=ClaveEncriptado;}
+function ActivarAutorizacionDatos(){if($('#AceptaAutorizacion').is(':checked')){$('#ManejoDatos').prop('disabled',false);}else{$('#ManejoDatos').prop('disabled',true);}}
+function abrirEnNuevaPestana(url){window.open(url,'_blank');}
